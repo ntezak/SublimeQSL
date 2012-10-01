@@ -29,8 +29,8 @@ Note: ``super`` refers to either the ``CMD`` key in Mac OS X or the ``CTRL``
 
 
     1. Type ``Super+SHIFT+P`` to enter the Command Prompt.
-    2. Start typing ``add repository``. Once you see ``Package Control: Add Channel`` highlighted,
-       type ``Enter``.
+    2. Start typing ``add channel``. Once you see ``Package Control: Add Channel``
+       highlighted, type ``Enter``.
     4. In the text box that has appeared at the bottom of the window,
         paste this, and type ``Enter``:
 
