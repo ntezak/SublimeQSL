@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>qsl</string>
+	</array>
+	<key>name</key>
+	<string>QSL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\[.*\]</string>
+			<key>name</key>
+			<string>keyword.source.qsl</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(\{)(survey|page|end page|module|end module)?</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.qsl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.qsl</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.qsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\})</string>
+			<key>name</key>
+			<string>source.python.embedded.qsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.python</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>&lt;&lt;</string>
+			<key>end</key>
+			<string>&gt;&gt;</string>
+			<key>name</key>
+			<string>constant.numeric.qsl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+					<key>name</key>
+					<string>constant.numeric.qsl</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.qsl</string>
+	<key>uuid</key>
+	<string>294d689d-d166-4fe4-93c3-37e10ddeb84f</string>
+</dict>
+</plist>
