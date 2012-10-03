@@ -13,7 +13,7 @@
             "match": "^#.*$"
         }, 
         {
-            "match": "(\\{)([\\w]+)( survey| page| module)?[\\w =\"]+?(\\})",
+            "match": "(\\{)([\\w]+)( survey| page| module| end)?[\\w =\"]+?(\\})",
             "captures": {
                 "1":  {
                     "name": "keyword.source.qsl"
@@ -35,8 +35,8 @@
                     "include": "source.python"
                 }
             ], 
-            "begin": "^\\{$", 
-            "end": "(^\\}$)", 
+            "begin": "^\\{[\\s]+$", 
+            "end": "(^\\}[\\s]+$)", 
             "name": "source.python.embedded.qsl"
         },
         {

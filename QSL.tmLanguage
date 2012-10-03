@@ -53,13 +53,13 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\{)([\w]+)( survey| page| module)?[\w ="]+?(\})</string>
+			<string>(\{)([\w]+)( survey| page| module| end)?[\w ="]+?(\})</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\{$</string>
+			<string>^\{[\s]+$</string>
 			<key>end</key>
-			<string>(^\}$)</string>
+			<string>(^\}[\s]+$)</string>
 			<key>name</key>
 			<string>source.python.embedded.qsl</string>
 			<key>patterns</key>
