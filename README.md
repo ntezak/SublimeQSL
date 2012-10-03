@@ -18,7 +18,7 @@ Currently supported features:
 Installation
 ------------
 
-Note: ``super`` refers to either the ``CMD`` key in Mac OS X or the ``CTRL``
+Note: ``Super`` refers to either the ``CMD`` key in Mac OS X or the ``CTRL``
     key in Windows and Linux.
 
 1. If you don't already have Package Control installed, follow these

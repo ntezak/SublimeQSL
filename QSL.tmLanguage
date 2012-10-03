@@ -17,28 +17,49 @@
 			<string>keyword.source.qsl</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(\{)(survey|page|end page|module|end module)?</string>
+			<key>match</key>
+			<string>&lt;[\w ]+&gt;</string>
+			<key>name</key>
+			<string>keyword.source.qsl</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^#.*$</string>
+			<key>name</key>
+			<string>comment.source.qsl</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.qsl</string>
+					<string>keyword.source.qsl</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.qsl</string>
+					<string>keyword.source.qsl</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.qsl</string>
+					<string>keyword.source.qsl</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.qsl</string>
 				</dict>
 			</dict>
+			<key>match</key>
+			<string>(\{)([\w]+)( survey| page| module)?[\w ="]+?(\})</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^\{$</string>
 			<key>end</key>
-			<string>(\})</string>
+			<string>(^\}$)</string>
 			<key>name</key>
 			<string>source.python.embedded.qsl</string>
 			<key>patterns</key>
@@ -51,18 +72,16 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>&lt;&lt;</string>
+			<string>&lt;</string>
 			<key>end</key>
-			<string>&gt;&gt;</string>
+			<string>&gt;</string>
 			<key>name</key>
-			<string>constant.numeric.qsl</string>
+			<string>text.html.embedded.qsl</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
-					<key>name</key>
-					<string>constant.numeric.qsl</string>
+					<string>text.html.basic</string>
 				</dict>
 			</array>
 		</dict>
