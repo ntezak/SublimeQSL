@@ -44,6 +44,24 @@ Note: ``Super`` refers to either the ``CMD`` key in Mac OS X or the ``CTRL``
     3. After a short delay, you will see available packages list. Start typing ``qsl``
        and press ``Enter`` when ``SublimeQSL`` is highlighted.
 
+
+A number of people have reported problems installing packages with recent versions
+of Package Control. Installing the testing version of Package Control seems to
+resolve this issue. To do this:
+
+1. Open Sublime and click `Prefereces > Browse Packages` to open the packages folder.
+
+2. Browse up a level. You'll see a bunch of packages folders and a few others.
+
+3. Delete the entire `Package Control` folder from each of `Installed Packages`,
+   `Packages` and `Pristine Packages`.
+
+4. Follow the instructions in the `Manual Installtion` section of the Package Control
+   [installation instructions](http://wbond.net/sublime_packages/package_control/installation).
+
+5. Follow installation steps 2 and 3 above.
+
+
 Usage
 -----
 
@@ -52,3 +70,14 @@ To enable SublimeQSL for your files, you have two options:
 1. Name your files with the ``.qsl`` extension (recommended).
 
 2. Select ``QSL`` from the file type menu in the status bar, or in ``View > Syntax``
+
+
+Issues
+------
+
+If you notice any issues please submit a
+[new Issue](https://github.com/berryp/SublimeQSL/issues).
+
+Of course, feel free to fork this project and make any bug fixes, new features or
+improvements and sublime pull requests. When changes are committed to this repository
+`Package Control` should automatically update your installed version.
