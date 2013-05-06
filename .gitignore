@@ -4,3 +4,5 @@ README.html
 .swp
 .~
 .hg*
+*.pyc
+*.cache
