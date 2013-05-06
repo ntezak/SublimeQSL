@@ -13,18 +13,15 @@ class QslGridRowCommand(sublime_plugin.TextCommand):
             region = self.view.sel()[0]
             line = self.view.line(region)
             (a, b) = line.a, line.b
-
-            gridvarname = 'gridvarname'
-            # found_var = False
-
+            
             m = row_header_pattern.match(self.view.substr(line))
             if m:
                 gridvarname = m.group(1)
-            self.view.sel().clear()
-            self.view.sel().add(sublime.Region(b, b))
-            self.view.run_command('insert_snippet',
-                                  {"contents":
-                                  "\n-[" + gridvarname + "_$1] $0"})
+                self.view.sel().clear()
+                self.view.sel().add(sublime.Region(b, b))
+                self.view.run_command('insert_snippet',
+                                      {"contents":
+                                      "\n-[" + gridvarname + "_$1] $0"})
 
 
 class QslGridColCommand(sublime_plugin.TextCommand):

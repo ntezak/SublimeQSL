@@ -81,3 +81,17 @@ If you notice any issues please submit a
 Of course, feel free to fork this project and make any bug fixes, new features or
 improvements and sublime pull requests. When changes are committed to this repository
 `Package Control` should automatically update your installed version.
+
+
+Added by Jenny Miller and Nikolas Tezak
+---------------------------------------
+
+**Snippets:**
+
+asdlfjlsad
+
+
+
+**Plugins:**
+
+askdfsakjdfhk
