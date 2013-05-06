@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+[${1:identifier}] {single ${2:order=${3:"randomize"}} varlabel="${4:Variable Label}"} ${5:Question Text?}
+<1> ${6: First Entry}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>single</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.qsl</scope>
+</snippet>

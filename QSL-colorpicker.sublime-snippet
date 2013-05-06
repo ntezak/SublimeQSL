@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[${1:identifier}] {colorpicker ${2:order=${3:"randomize"}}} ${4:Please check all that apply.}
+-[$1_${5:1}] {varlabel="${6:Variable Label}"} ${7: Question}
+
+<1> ${8: option 1}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>colorp</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.qsl</scope>
+</snippet>

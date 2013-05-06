@@ -1,0 +1,10 @@
+[
+ { "keys": ["shift+enter"], "command": "qsl_grid_row",
+   "context":  [
+            {"key": "selector", "operator": "equal", "operand": "source.qsl"}]
+ },
+ { "keys": ["alt+enter"], "command": "qsl_grid_col",
+    "context":  [
+            {"key": "selector", "operator": "equal", "operand": "source.qsl"}]
+}
+]

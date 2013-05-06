@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+[${1:identifier}] {grid ${2:roworder=${3:"randomize"}} ${4:colorder=${5:"randomize"}} varlabel="${6:Variable Label}"} ${7:Question Text?}
+-[$1_${8:}] ${9: row header 1}
+
+<1> ${10: col header 1}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>grid</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.qsl</scope>
+</snippet>
